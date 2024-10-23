@@ -97,7 +97,7 @@ Resources:
       SecurityGroupIds:
         - !Ref InstanceSecurityGroup
       SubnetId: !Ref PublicSubnet
-      ImageId: ami-04a37924ffe27da53 # Amazon Linux 2 AMI (check for latest)
+      ImageId: ami-04a37924ffe27da53 
       UserData:
         Fn::Base64: !Sub |
           #!/bin/bash
@@ -105,7 +105,7 @@ Resources:
           yum install -y nginx
           systemctl start nginx
           systemctl enable nginx
-          echo "<html><body><h1>Hi This is Ram</h1></body></html>" > /usr/share/nginx/html/index.html
+          echo "<html><body><h1>Hi This is Ramkumar</h1></body></html>" > /usr/share/nginx/html/index.html
       Tags:
         - Key: Name
           Value: m2EC2Instance
