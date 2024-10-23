@@ -56,7 +56,7 @@ Resources:
       VpcId: !Ref VPC
       Tags:
         - Key: Name
-          Value: m2PublicRouteTable
+          Value: m5PublicRouteTable
 
   PublicRoute:
     Type: AWS::EC2::Route
