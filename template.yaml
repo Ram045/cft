@@ -105,7 +105,7 @@ Resources:
           yum install -y nginx
           systemctl start nginx
           systemctl enable nginx
-          echo "<html><body><h1>Hi This is Ramkumar</h1></body></html>" > /usr/share/nginx/html/index.html
+          echo "<html><body><h1>Hi This is Ram</h1></body></html>" > /usr/share/nginx/html/index.html
       Tags:
         - Key: Name
           Value: m2EC2Instance
